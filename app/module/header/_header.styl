@@ -4,6 +4,13 @@
 	z-index 100
 .header--main
 	.header-menu__part
+		+below(1024px)
+			fw()
+			br(0)
+			padding 0
+			&:before
+				content ''
+				display none 
 		&:before
 			content ''
 			bgi('bg-cloud.png')
@@ -17,6 +24,9 @@
 	background-size cover
 	background-position  center center
 .header-top
+	+below(1024px)
+		fw()
+		flex(mid)
 	flex(between)
 	padding 15px 0
 .header-top__flag
@@ -32,8 +42,10 @@
 		height 14px 		
 		
 .header-top__auth
+	+below(1024px)
+		a 
+			font-size 12px
 	flex(mid)
-	
 .header-top__auth-el
 	&:nth-child(2)
 		border-right 1px solid grey
@@ -41,10 +53,16 @@
 	line-height 15px
 	
 .header-menu
+	+below(1024px)
+		fw()
+		margin-bottom 30px
 	flex(between)
 .header-menu__left
-	position relative
+	flex-grow 1
+	+below(1024px)
+		margin-top 120px
 	flex(between)
+	position relative
 	padding 20px
 	background orange 
 	width 100%
@@ -60,12 +78,36 @@
 		border-radius 50%
 		
 .header-menu__el
+	+below(1200px)
+		font-size 12px
+		padding 0px 10px
+	+above(1024px)
+		display block!important
+	+below(1024px)
+		border 0px!important
+		padding 10px
+		display none 
 	up()
 	width 100%
 	color white
 	text-align center
-	
+.header-menu__left
+	+below(1024px)
+		order 2
+	order 1
+.header-menu__right
+	flex-grow 1
+	+below(1024px)
+		order 3
+	order 3
 .header-menu__logo
+	+below(1024px)
+		flex(mid)
+		order 1
+		align-items: initial;
+		width 100%
+	order 2
+	width 70%
 	flex(between)
 	align-items: initial;
 	padding  0 20px
@@ -75,9 +117,14 @@
 		text-align center
 		display block
 .header-menu__logo-img
+	flex-grow 1
 	width 70px	
 	position relative
 	img
+		+below(1024px)
+			height 125px
+			top -15px
+			left 15px
 		left 5px
 		position absolute
 		height 170px
@@ -101,7 +148,14 @@
 		border-radius 50% 
 .later-space
 	letter-spacing 3px
-.header-menu__part
+
+.header-menu__left
+	.header-menu__el
+		flex-grow 1
+		&:nth-child(3)
+			border-right 1px  dotted white
+			border-left 1px  dotted white
+.header-menu__right
 	.header-menu__el
 		&:nth-child(2)
 			border-right 1px  dotted white
@@ -109,4 +163,19 @@
 .header-wraper
 	position relative
 	z-index 200
+.header-menu__toggle
+	+below(1024px)
+		display block 
+	display none
+	up()
+	width 100%
+	color white
+	text-align center
+	padding 10px
+	cp()
+	position relative
+	.icon-bars
+		position absolute
+		right 10px
+		top 12px 
 //!block header end

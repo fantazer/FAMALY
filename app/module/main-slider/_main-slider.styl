@@ -1,5 +1,7 @@
 //! block main-slider
 .main-slider
+	+below(768px)
+		display none!important 
 	position relative
 	.owl-prev,
 	.owl-next
@@ -11,8 +13,18 @@
 	background-size cover
 	background-position center center
 .main-slider--wraper
+	+below(768px)
+		flex(mid)
 	position relative
 .main-slider__form
+	+below(1280px)
+		right 100px
+	+below(768px)
+		position relative
+		top 0
+		right 0
+		margin-bottom 20px
+		width 100%
 	position absolute
 	z-index 200
 	right 20px
@@ -39,6 +51,8 @@
 	font-style italic
 	margin-bottom 15px
 .main-slider__footer
+	+below(768px)
+		display none 
 	height 150px
 	width 100%
 	bgi('bg-clod-bottom.png')
