@@ -1,0 +1,85 @@
+a:hover
+	text-decoration none
+a
+	text-decoration none
+	color black
+.bold
+	font-weight 600
+html 
+	box-sizing border-box
+*,
+*:before,
+*:after 
+	box-sizing: inherit
+img,
+video,
+iframe 
+	max-width 100%
+	height auto
+	border 0
+	-ms-interpolation-mode bicubic
+	display block
+input
+	outline: 0 !important
+textarea 
+	resize: none
+
+.hidden
+	display none  !important
+.clearfix 
+	zoom 1
+.clearfix:before,
+.clearfix:after 
+	content ""
+	display table
+.clearfix:after 
+	clear both
+	
+
+@font-face {font-family: "main";
+	src: url("../fonts/main.eot"); /* IE9*/
+	src: url("../fonts/main.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+	url("../fonts/main.woff") format("woff"), /* chrome、firefox */
+	url("../fonts/main.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+	url("../fonts/main.svg#Futura LT W01 Book") format("svg"); /* iOS 4.1- */
+}
+
+p
+	margin 0
+	margin-bottom 10px
+input[type="checkbox"],
+input[type="radio"]
+	display none
+	
+input,textarea
+	border 0px
+	padding 10px 15px
+	border 1px solid #ececec
+	border-radius 14px 
+	margin-bottom 10px
+	
+button
+	up()
+	br(14px)
+	tr(all)
+	border 0px
+	display inline-block
+	//margin-bottom 20px
+	font-size 14px
+	padding 10px 25px
+	background orange
+	color white
+	&:hover
+		background darken(orange,10)
+	form
+		display block
+
+table
+	table(true,true)
+.small-only
+	+below(768px)
+		display table
+	display none
+.large-only
+	+below(768px)
+		display none

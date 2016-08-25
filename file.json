@@ -1,0 +1,31 @@
+{
+	"block":{
+		"header":"header",
+		"header-row":"header-row",
+		"footer":"footer",
+		"main-slider":"main-slider",
+		"section-test":"section-test",
+		"section-welcome":"section-welcome",
+		"section-review":"section-review",
+		"section-map":"section-map",
+		"section-bread":"section-bread",
+		"section-filter":"section-filter",
+		"content-block":"content-block",
+		"content-block":"content-block",
+		"content-block__filter":"content-block__filter",
+		"pagination":"pagination",
+		"vertical-slider":"vertical-slider",
+		"form-enter":"form-enter",
+		"form-enter":"form-enter",
+		"form-registr":"form-registr",
+		"footer":"footer"
+	},
+	"page":{
+		"index":"index",
+		"article":"article",
+		"catalog":"catalog",
+		"lesson":"lesson",
+		"registration":"registration",
+		"test":"test"
+	}
+}

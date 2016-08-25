@@ -1,0 +1,29 @@
+//! block section-bread
+.bread
+ 	f()
+ 	margin-bottom 20px
+.bread--el
+	@extend .italy
+	font-size 13px
+	text-decoration underline
+	margin 0 15px
+	position relative
+	&:after
+		content ''
+		position absolute
+		width 5px
+		height 5px
+		background black
+		round() 
+		right -17px
+		top 50%
+		margin-top -1.5px
+	&:last-child
+		text-decoration none
+		&:after
+			content ''
+			display none
+			
+		
+	
+//!block section-bread end

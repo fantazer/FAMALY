@@ -1,0 +1,67 @@
+//! block vertical-slider
+
+.slider-vertical__wraper
+	.bx-wrapper,
+	.bx-window
+		width 100%!important
+		height 840px!important
+	.bx-next
+		position absolute
+		top -50px
+		left 50%
+		font-size 40px
+		color orange
+		padding 10px 30px
+		background white 
+		height 60px
+		width 100px
+		margin-left -65px
+		br(50%)
+		span
+			margin-top -15px
+			display block
+	.bx-prev
+		position absolute
+		bottom -50px
+		left 50%
+		font-size 40px
+		color orange
+		padding 10px 30px
+		background white 
+		height 60px
+		width 100px
+		margin-left -65px
+		br(50%)
+		span
+			margin-top 5px
+			display block
+.slider-vertical
+	a
+		width 100%
+		height 210px!important
+		display block!important
+.slider-vertical__el
+	br(14px)
+	width 100%
+	height 200px
+	background-repeat no-repeat
+	background-size cover
+	position relative
+	z-index 200
+	&:hover
+		.slider-vertical__info
+			background grey 
+.slider-vertical__info
+	position absolute
+	left 0
+	bottom 0
+	padding 15px
+	background orange
+	border-radius 0 14px 0 14px
+	text-decoration underline
+	color white
+	font-size 20px 
+	width 60%
+	text-transform uppercase
+	tr(all)
+//!block vertical-slider end

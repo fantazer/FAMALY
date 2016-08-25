@@ -1,0 +1,47 @@
+//Include style
+include block_html/_style.jade
+body
+	//Include header
+	include block_html/_const.jade
+	include block_html/_mixin.jade
+	include ../module/**/*.jade
+	
+	+header-row()
+	.content
+		.main-cont
+				+section-bread()
+				.grid.grid--container
+					.row
+						//left-col
+						.col.col--md-8
+							.text-block
+								.type.type-lg.type--mid.type--up Простые действия для роста бизнеса
+								img.img--mid.video(src="img/video.jpg", alt="") 
+								.type.type-md.type--mid.type--italy После просмотра обучающего видео — сразу приступайте к выполнению домашнего задания!
+								table.table.table--lesson
+									tr
+										td  Расписание обучения в WA
+										td 
+											a(href="#").link--mark Скачать
+									tr
+										td  Программа обучения на первые 14 дней
+										td  
+											a(href="#").link--mark Скачать
+									tr
+										td  Рассрочка 3 месяцев (14 000 рублей или 350 баллов)
+										td  
+											a(href="#").link--mark Скачать
+
+								p.type--italy  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum obcaecati perferendis vero rem provident officiis error tempore ipsum illum aliquam sequi excepturi, minus atque est veniam! Sit earum nemo minus, modi sunt ad et id, laborum voluptates laudantium quis vero quaerat eveniet culpa corrupti exercitationem inventore tenetur ea, cupiditate rem quasi qui at perspiciatis! Vitae necessitatibus nam vero explicabo fugit reprehenderit aliquam minus corporis sed similique perspiciatis dolorem nisi illo atque quas, alias dolores tempore nostrum quae, soluta, dolorum. Iusto nisi corrupti animi, dignissimos culpa, expedita sint tenetur numquam repellendus eveniet dicta. Natus provident, ex nam odit ab et. Unde.
+
+						//right-col
+						.col.col--md-4
+							+vertical-slider()
+
+	+footer()
+
+	//Include scripts
+	include ./block_html/_script.jade
+
+
+

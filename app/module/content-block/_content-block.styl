@@ -1,0 +1,40 @@
+//! block content-block
+.content-block
+	f()
+	margin-bottom 10px
+.content-block__img
+	width 30%
+	margin-right 20px
+	img
+		width 100%
+		br(14px)
+.content-block__info
+	width 70%
+.content-block__title
+	color #e36101
+	font-size 20px
+	text-decoration underline
+	text-transform uppercase
+	margin-bottom 10px
+	display inline-block
+	&:hover
+		color grey
+.content-block__text
+	margin-bottom 20px
+	@extend .italy
+.text-block--vertical
+	.content-block
+		fw()
+	.content-block__img
+		margin 0
+		margin-bottom 10px
+		img
+			width 100%
+		width 100%
+	.content-block__info
+		width 100%
+	.type
+		@extend .italy
+	.type-lg
+		font-size 20px
+//!block content-block end

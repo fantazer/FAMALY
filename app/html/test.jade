@@ -1,0 +1,60 @@
+//Include style
+include block_html/_style.jade
+body
+	//Include header
+	include block_html/_const.jade
+	include block_html/_mixin.jade
+	include ../module/**/*.jade
+	
+	+header-row()
+	.content
+		.main-cont
+				+section-bread()
+				.grid.grid--container
+					.row
+						//left-col
+						.col.col--md-9
+							.text-block.test-qestion
+								.type.type-lg.type--mid.type--italy Обучение детей
+								.type.type-md.type--mid.type--italy Вопрос: <strong>1 из 29 </strong>
+								.type.type--bold 1. Равным образом консультация с широким активом представляет собой интересный
+								.test-row
+									.test-row__el
+										+input-row("Не следует, однако забывать")
+									.test-row__el
+										+input-row("Равным образом реализация")
+									.test-row__el
+										+input-row("Идейные соображения высшего порядка")
+								a(href="#").btn.btn-md Ответить
+
+							.text-block.test-qestion
+									.type.type-lg.type--mid.type--italy Результаты тестирования
+									.type.type-md.type--mid.type--italy Правильные ответы:  <strong>1 из 29 </strong>
+									p.type--italy  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus eveniet fuga debitis amet inventore blanditiis, cupiditate, obcaecati ipsa iusto cumque minus, quisquam veniam mollitia nisi optio. Natus eum quos voluptatem dolorum illo consectetur esse nemo facere fugit, laudantium, debitis at enim autem sunt, obcaecati ducimus aut consequuntur cum, molestiae! Recusandae et debitis inventore illo dignissimos delectus deleniti ut nostrum voluptates, necessitatibus in cupiditate animi ipsa hic facere, itaque magnam cum, architecto quos. Possimus numquam ab placeat explicabo at. Eum ipsam aspernatur eveniet architecto! Voluptatibus qui eius nam ut. Dolor pariatur, earum dolores, dolorum quisquam culpa officia quidem cum animi iste.
+
+							.text-block.test-qestion
+									.type.type-lg.type--mid.type--italy Варианты вопросов для верстки
+									- for (var i = 0; i < 7; i++)
+										.test-var
+											.type.type--bold #{i+1}. Равным образом консультация с широким активом представляет собой интересный
+											.test-row
+												.test-row__el
+													+input-row__default("Не следует, однако забывать")
+												.test-row__el
+													+input-row("Равным образом реализация")
+												.test-row__el
+													+radio-row("Идейные соображения высшего порядка")
+								
+						//right-col
+						.col.col--md-3
+							.text-block.text-block--vertical
+								.type.type-lg.type--up Обучение детей
+								- for (var i = 0; i < 3; i++)
+									+content-block()
+	+footer()
+
+	//Include scripts
+	include ./block_html/_script.jade
+
+
+

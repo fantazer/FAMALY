@@ -1,0 +1,29 @@
+//Include style
+include block_html/_style.jade
+body
+	//Include header
+	include block_html/_const.jade
+	include block_html/_mixin.jade
+	include ../module/**/*.jade
+	
+	.cont-fullheight
+		+header-row()
+		.content
+			.main-cont
+					+section-bread()
+					.grid.grid--container
+						.row
+							//left-col
+							.col.col--md-4
+								+form-enter()
+							//right-col
+							.col.col--md-8
+								+form-registr()
+
+		+footer()
+
+	//Include scripts
+	include ./block_html/_script.jade
+
+
+

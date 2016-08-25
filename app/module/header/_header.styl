@@ -1,0 +1,112 @@
+//! block header
+.header
+	position relative
+	z-index 100
+.header--main
+	.header-menu__part
+		&:before
+			content ''
+			bgi('bg-cloud.png')
+.header__cloud
+	width 100%
+	position absolute
+	left 0px
+	top 0px
+	bgi('bg-cloud.png')
+	height 210px
+	background-size cover
+	background-position  center center
+.header-top
+	flex(between)
+	padding 15px 0
+.header-top__flag
+	f()
+.header-top__flag-el
+	flex(mid)
+	span
+		margin-left 5px
+		margin-right 10px
+		font-size 14px
+		font-weight 400
+	img
+		height 14px 		
+		
+.header-top__auth
+	flex(mid)
+	
+.header-top__auth-el
+	&:nth-child(2)
+		border-right 1px solid grey
+	padding 0 10px
+	line-height 15px
+	
+.header-menu
+	flex(between)
+.header-menu__left
+	position relative
+	flex(between)
+	padding 20px
+	background orange 
+	width 100%
+	border-radius 10px 0 0 10px
+	&:before
+		content ''
+		background blue
+		width 20px
+		height 100%
+		position absolute
+		top 0px
+		right -10px
+		border-radius 50%
+		
+.header-menu__el
+	up()
+	width 100%
+	color white
+	text-align center
+	
+.header-menu__logo
+	flex(between)
+	align-items: initial;
+	padding  0 20px
+.header-menu__logo-text
+	span
+		up()
+		text-align center
+		display block
+.header-menu__logo-img
+	width 70px	
+	position relative
+	img
+		left 5px
+		position absolute
+		height 170px
+		top -35px
+		
+.header-menu__right
+	flex(between)
+	border-radius 0 10px 10px 0
+	padding 20px
+	background orange 
+	width 100%
+	position relative
+	&:before
+		content ''
+		background blue
+		width 20px
+		height 100%
+		position absolute
+		top 0px
+		left -10px
+		border-radius 50% 
+.later-space
+	letter-spacing 3px
+.header-menu__part
+	.header-menu__el
+		&:nth-child(2)
+			border-right 1px  dotted white
+			border-left 1px  dotted white
+.header-wraper
+	position relative
+	z-index 200
+//!block header end

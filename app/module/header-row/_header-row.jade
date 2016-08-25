@@ -1,0 +1,38 @@
+mixin header-row()
+	//block header-row
+	.header.header--main.header--row 
+		.main-cont.header-wraper
+			.header-top
+				.header-top__flag
+					a(href="#").header-top__flag-el
+						img(src="img/flag-rus.png", alt="")
+						span  Rus
+					a(href="#").header-top__flag-el
+						img(src="img/flag-kaz.png", alt="")
+						span  Kzh
+				.header-top__auth
+					img(src="img/i-key.png", alt="")
+					a(href="#").header-top__auth-el Регистрация
+					a(href="#").header-top__auth-el Вход на сайт
+			.header-menu
+				.header-menu__part.header-menu__left
+					a(href="#").header-menu__el Журнал
+					a(href="#").header-menu__el Институт
+					a(href="#").header-menu__el Новости
+				.header-menu__logo
+					.header-menu__logo-text  
+						span Отбасылық 
+						span тәрбиеелеу 
+						span ИНСТИТУТЫ
+					.header-menu__logo-img
+						img(src="img/logo-small.png", alt="")
+					.header-menu__logo-text 
+						span.later-space ИНСТИТУТ 
+						span СЕМЕЙНОГО 
+						span ВОСПИТАНИЯ
+				.header-menu__part.header-menu__right
+					a(href="#").header-menu__el Видео
+					a(href="#").header-menu__el Творчество
+					a(href="#").header-menu__el Контакты
+
+	//block header-row end

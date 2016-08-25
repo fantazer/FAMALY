@@ -1,0 +1,41 @@
+//Include style
+include block_html/_style.jade
+body
+	//Include header
+	include block_html/_const.jade
+	include ../module/**/*.jade
+	
+	+header-row()
+	.content
+		.main-cont
+				+section-bread()
+				.grid.grid--container
+					.row
+						//left-col
+						.col.col--md-9
+							.text-block
+								.type.type-md.type--up ПРОСТЫЕ ДЕЙСТВИЯ ДЛЯ РОСТА БИЗНЕСА 
+								img(src="img/item-1.jpg", alt="").img--mid
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam eos nemo recusandae nihil dicta reprehenderit fuga, provident ipsa ratione quod maiores, incidunt asperiores laborum praesentium ducimus quae ullam modi quos facilis. Ea quod iste, error ipsum, temporibus blanditiis explicabo maiores autem ratione tempora mollitia fuga aut, quia vero atque. Doloribus hic recusandae quae vitae voluptates harum, est aliquam fuga adipisci vel eum eius, nostrum fugit eos cumque corporis. Accusantium dolore in natus nobis minima distinctio animi similique esse reiciendis explicabo. Accusamus hic excepturi cumque, rerum illum repellat vitae deserunt pariatur cum nam, officiis suscipit in quidem at iusto! Recusandae, voluptates.
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores saepe ut vel ipsa veniam corporis odio rerum voluptatibus, voluptate voluptatum consequatur ab accusantium doloribus, sed iusto expedita asperiores earum molestias incidunt eius commodi cupiditate! Ducimus doloremque ipsam nesciunt voluptates esse dolor dicta aut quia itaque inventore nostrum consequuntur est, sapiente totam dolore? Minima sit vel quis inventore necessitatibus fugiat ipsum.
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores saepe ut vel ipsa veniam corporis odio rerum voluptatibus, voluptate voluptatum consequatur ab accusantium doloribus, sed iusto expedita asperiores earum molestias incidunt eius commodi cupiditate! Ducimus doloremque ipsam nesciunt voluptates esse dolor dicta aut quia itaque inventore nostrum consequuntur est, sapiente totam dolore? Minima sit vel quis inventore necessitatibus fugiat ipsum.
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero magni, dicta nihil. Molestiae dolorem ipsam labore fuga quibusdam ducimus quos deserunt. Aliquam est, sed doloremque blanditiis ea totam harum cumque.
+								.article-break
+								.type.type-md.type--italy Результаты тестирования
+								img.img-float--left(src="img/wellcome.jpg", alt="")
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo vel doloremque unde. Quaerat corrupti sint aut repellat voluptatum cumque quibusdam magni numquam minima quasi vel voluptates, mollitia ipsum, deserunt non fugiat doloremque, unde sapiente autem vitae blanditiis optio. Ipsa fugiat nam temporibus cum nisi dolore beatae, praesentium consequuntur impedit in iure labore sapiente, ad placeat? Odio voluptate itaque nobis quod.
+								p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo vel doloremque unde. Quaerat corrupti sint aut repellat voluptatum cumque quibusdam magni numquam minima quasi vel voluptates, mollitia ipsum, deserunt non fugiat doloremque, unde sapiente autem vitae blanditiis optio. Ipsa fugiat nam temporibus cum nisi dolore beatae, praesentium consequuntur impedit in iure labore sapiente, ad placeat? Odio voluptate itaque nobis quod.unde sapiente autem vitae blanditiis optio. Ipsa fugiat nam temporibus cum nisi dolore beatae, praesentium consequuntur impedit in iure labore sapiente, ad placeat? Odio voluptate itaque nobis quod.
+								.clearfix
+						//right-col
+						.col.col--md-3
+							.text-block.text-block--vertical
+								.type.type-lg.type--up Обучение детей
+								- for (var i = 0; i < 2; i++)
+									+content-block()
+	+footer()
+
+	//Include scripts
+	include ./block_html/_script.jade
+
+
+

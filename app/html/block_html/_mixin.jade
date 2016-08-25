@@ -1,0 +1,17 @@
+mixin input-row(a)
+	label.style-label
+		input(type="checkbox").sytle-input
+		.sytle-input-element
+		.sytle-input-text #{a}
+
+mixin input-row__default(a)
+	label.style-label
+		input(type="checkbox").sytle-input--default
+		.sytle-input-element--default
+		.sytle-input-text #{a}
+
+mixin radio-row(a)
+	label.style-label.radio_input
+		input(type="radio").sytle-input
+		.sytle-input-element
+		.sytle-input-text #{a}

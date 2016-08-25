@@ -1,0 +1,42 @@
+//Include style
+include block_html/_style.jade
+body
+	//Include header
+	include block_html/_const.jade
+	include ../module/**/*.jade
+	
+	+header-row()
+	.content
+		.main-cont
+				+section-bread()
+				+section-filter()
+				.grid.grid--container
+					.row
+						//left-col
+						.col.col--md-9
+							- for (var j = 0; j < 2; j++)
+								.text-block
+									.type.type-lg.type--up Обучение детей
+									- for (var i = 0; i < 4; i++)
+										+content-block()
+									.content-block
+										.content-block__img
+											img(src="img/children.jpg", alt="")
+										.content-block__info
+											a(href="#").content-block__title КАК ПРАВИЛЬНО ОБУЧАТЬСЯ В WA?
+											.content-block__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia eum ducimus, voluptate, porro sit at aliquam est minima optio deleniti suscipit fugit incidunt, iste nam? Doloribus eius quaerat, autem eveniet expedita, soluta sunt nulla, accusantium doloremque hic assumenda. Consequatur incidunt possimus at quae pariatur fugit voluptas quo tempora
+											a(href="#").btn.btn-md.btn--green Прочитать 
+							+pagination()
+						//right-col
+						.col.col--md-3
+							.text-block.text-block--vertical
+								.type.type-lg.type--up Обучение детей
+								- for (var i = 0; i < 3; i++)
+									+content-block()
+	+footer()
+
+	//Include scripts
+	include ./block_html/_script.jade
+
+
+

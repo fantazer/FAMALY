@@ -1,0 +1,329 @@
+.type-xs
+	+below(768px)
+		font-size 8px
+	font-size 10px
+	
+.type-sm
+	+below(768px)
+		font-size 10px
+	font-size 12px
+
+.type
+	+below(768px)
+		font-size 14px
+	font-size 16px
+
+.type-md
+	+below(768px)
+		font-size 18px
+	font-size 24px
+	margin-bottom 15px
+
+.type-lg
+	+below(768px)
+		font-size 20px
+	font-size 26px
+	margin-bottom 15px
+
+.type--up
+	up()
+.type--italy
+	font-style italic
+.type--mid
+	text-align center
+.type--bold
+	font-weight 600 
+
+.btn
+	up()
+	br(14px)
+	tr(all)
+	cp()
+	display inline-block
+	margin-bottom 20px
+	font-size 14px
+	background orange
+	color white
+	padding 10px 35px
+	&:hover
+		background grey
+	
+.btn--sm
+	font-size 10px
+	padding 5px 10px
+	@extend .btn
+.btn--md
+	font-size 12px
+	
+	@extend .btn
+	
+.btn--lg
+	font-size 20px
+	padding 10px 30px
+	@extend .btn
+
+.btn--red
+	background red
+	color white
+	&:hover
+		background darken(red,10)
+.btn--green
+	background green
+
+
+@-webkit-keyframes slideInDown {
+	from {
+		transform: translate3d(0, -100%, 0);
+		visibility: visible;
+	}
+	to {
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes slideInDown {
+	from {
+		transform: translate3d(0, -100%, 0);
+		visibility: visible;
+	}
+
+	to {
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.shrink
+	position fixed
+	top 0
+	left 0
+	background white
+	width 100%
+	margin 0
+	animation:  slideInDown  1s 1 ease-in-out
+
+
+	
+
+.icon
+	display inline
+
+.owl-next,.owl-prev
+	position absolute
+	top 50%
+	margin-top -30px
+	color white
+	font-size 40px
+.owl-carousel
+	position relative
+	.icon
+		font-size 64px
+.owl-prev
+	+below(768px)
+		left 2%
+	left 1%
+.owl-next
+	+below(768px)
+		right 2%
+	right 1%
+.owl-dots
+	width 100%
+	flex(mid)
+	margin-top -40px
+	position relative
+	z-index 2000
+.owl-dot
+	round()
+	margin 5px
+	width 10px
+	height 10px
+	background white
+.owl-dot.active
+	background #322f40
+
+
+
+.style-label
+	display flex
+	position relative
+	align-items center
+	margin-bottom 20px
+.italy
+	font-style italic
+
+//Style checkbox
+.sytle-input-element
+	width 20px
+	height 20px
+	position relative
+	display inline-block
+	margin-right 10px
+	background-image: url(../img/sprite.png);
+	background-position: 0px -18px;
+	width: 18px;
+	height: 18px;
+	//box-shadow: 0px -1px 3px #ccc6c6;
+	cp()
+.sytle-input
+	position absolute
+	top 0
+	left -999px
+	&:checked + .sytle-input-element
+		background-image: url(../img/sprite.png);
+		background-position: 0px 0px;
+		width: 18px;
+		height: 18px;
+		flex(mid)
+
+.sytle-input-element--default
+	width 20px
+	height 20px
+	position relative
+	display inline-block
+	margin-right 10px
+	background-image: url(../img/sprite.png);
+	background-position: -18px 0;
+	width: 18px;
+	height: 18px;
+.sytle-input--default
+	position absolute
+	top 0
+	left -999px
+	&:checked + .sytle-input-element--default
+		background-image: url(../img/sprite.png);
+		background-position: -18px 0px;
+		width: 18px;
+		height: 18px;
+		flex(mid)
+
+//radio
+.radio_input
+	.sytle-input-element
+		width 20px
+		height 20px
+		position relative
+		display inline-block
+		margin-right 10px
+		background-image: url(../img/sprite.png);
+		background-position: -36px -18px;
+		width: 18px;
+		height: 18px;
+		cp()
+		
+	.sytle-input
+		position absolute
+		top 0
+		left -999px
+		&:checked + .sytle-input-element
+			background-image: url(../img/sprite.png);
+			background-position: -18px -18px;
+			width: 18px;
+			height: 18px;
+			flex(mid)
+
+	.sytle-input-element--default
+		width 20px
+		height 20px
+		position relative
+		display inline-block
+		margin-right 10px
+		background-image: url(../img/sprite.png);
+		background-position: -36px 0;
+		width: 18px;
+		height: 18px;
+	.sytle-input--default
+		position absolute
+		top 0
+		left -999px
+		&:checked + .sytle-input-element--default
+			background-image: url(../img/sprite.png);
+			background-position: -36px 0px;
+			width: 18px;
+			height: 18px;
+			flex(mid)
+			
+.article-break
+	height 20px
+.img--mid
+	margin-bottom 10px
+
+.img-float--left
+	float left
+	margin 0
+	margin-right 10px
+	margin-bottom 10px
+.section
+	padding 40px 0px
+.text-block
+	padding 25px 20px
+	border-radius 5px
+	background white
+	margin-bottom 10px
+.text-block__blue
+	background blue
+.content
+	bgi('pattern.jpg')
+	width 100%
+	background-repeat repeat
+	padding-top 20px
+	padding-bottom 40px
+
+.all-page
+	flex(between)
+	fw()
+.all-page__el
+	width 32%
+	margin-bottom 20px
+.all-page__info
+	padding 10px 20px
+	text-align center
+	bsh()
+
+.test-row
+	flex(mid)
+	fw()
+	.style-label
+		margin-bottom 0
+.test-row__el
+	font-size 14px
+	padding 20px 5px
+.test-qestion
+	flex(mid)
+	fw()
+	fl()
+	.btn
+		margin-bottom 0
+	+below(1200px)
+		.type
+			text-align center
+.test-var
+	margin-bottom 10px
+	border-bottom 2px dotted #dddcdc
+	+below(1200px)
+		.type
+			text-align center
+.video
+	width 100%
+.link--mark
+	color orange
+	text-decoration underline
+.table--lesson
+	tr
+		td
+			padding 15px
+			&:nth-child(1)
+				width 75%
+			&:nth-child(2)
+				text-align center
+				
+.cont-fullheight
+	min-height 100vh
+	f()
+	fl()
+	.header--row
+		flex-grow 0
+	.content
+		flex-grow 1
+		position relative
+	.footer
+		flex-grow 0
+	

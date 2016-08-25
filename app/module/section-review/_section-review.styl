@@ -1,0 +1,39 @@
+//! block section-review
+.section-review
+	.owl-prev,
+	.owl-next
+		color orange
+		font-size 60px
+	.owl-next
+		+below(768px)
+			right 0
+		right -5%
+	.owl-prev
+		+below(768px)
+			left 0
+		left -5%
+.section-review__title
+	text-align center
+	@extend .type	
+	@extend .type-lg
+	margin-bottom 30px
+	font-size 27px
+//.section-review
+//.review-slider
+.review-slider__el
+	flex(between)
+	padding 0 40px
+.review-slider__img
+	width 25%
+	img
+		border-radius 50% 
+.review-slider__info
+	width 70%
+	margin-left 5%
+.review-slider__title
+	up()
+	font-size 20px
+	margin-bottom 20px
+.review-slider__text
+	@extend .italy
+//!block section-review end
