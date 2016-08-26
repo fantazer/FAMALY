@@ -1,4 +1,4 @@
-/*
+@import "http://webfonts.ru/import/opensans.css";/*
 Icon classes can be used entirely standalone. They are named after their original file names.
 
 Example usage in HTML:
@@ -319,6 +319,19 @@ table tbody tr:hover td,table tbody tr:hover th {
   display: none;
 }
 
+.old-browser {
+  background: #7a7a7a;
+  width: 100%;
+  height: 100vh;
+  padding-top: 200px;
+}
+
+.old-browser-text {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+
 .type-xs {
   font-size: 10px;
 }
@@ -333,12 +346,12 @@ table tbody tr:hover td,table tbody tr:hover th {
 
 .type-md {
   font-size: 24px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .type-lg,.section-review__title {
   font-size: 26px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .type--up {
@@ -504,6 +517,7 @@ table tbody tr:hover td,table tbody tr:hover th {
   background-position: 0px -18px;
   width: 18px;
   height: 18px;
+  display: table;
 }
 
 .sytle-input-element:hover {
@@ -1035,6 +1049,10 @@ body {
 }
 
 .footer-menu__left {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1075,6 +1093,7 @@ body {
 }
 
 .footer-menu__logo {
+  width: 70%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1109,10 +1128,14 @@ body {
   left: 5px;
   position: absolute;
   height: 170px;
-  top: -35px;
+  top: -30px;
 }
 
 .footer-menu__right {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1420,6 +1443,10 @@ form {
 }
 
 .header-menu__left {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1467,6 +1494,10 @@ form {
 }
 
 .header-menu__right {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   -webkit-box-ordinal-group: 4;
   -webkit-order: 3;
   -ms-flex-order: 3;
@@ -1551,6 +1582,13 @@ form {
 
 .later-space {
   letter-spacing: 3px;
+}
+
+.header-menu__left .header-menu__el {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 .header-menu__left .header-menu__el:nth-child(3) {
@@ -1777,6 +1815,7 @@ form {
   position: absolute;
   width: 100%;
   height: 100%;
+  top: 20px;
 }
 
 .map__form {
@@ -1893,6 +1932,7 @@ form {
 
 .video-cont {
   width: 100%;
+  height: 400px;
 }
 
 .section-welcome {
@@ -2018,6 +2058,92 @@ form {
   font-family:"main";src:url("../fonts/main.eot");undefined:undefined;src:url("../fonts/main.eot?#iefix") format("embedded-opentype"), url("../fonts/main.woff") format("woff"), url("../fonts/main.ttf") format("truetype"), url("../fonts/main.svg#Futura LT W01 Book") format("svg");undefined:undefined;
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .footer-menu__logo-img {
+    width: 70px;
+    position: relative;
+  }
+
+  .footer-menu__logo-img img {
+    left: 5px;
+    position: absolute;
+    height: 170px;
+    top: -50px !important;
+  }
+
+  .opros__wraper p {
+    display: block;
+    width: 100%;
+  }
+
+  .form-registr .text-block {
+    width: 100%;
+  }
+
+  .form-registr .type {
+    width: 100%;
+    display: block;
+  }
+
+  .form-enter .text-block {
+    width: 100%;
+  }
+
+  .form-enter .type {
+    width: 100%;
+    display: block;
+  }
+
+  .form-registr__wrap {
+    width: 100%;
+  }
+
+  .form-registr__wrap input {
+    display: block;
+  }
+
+  .header-menu__right {
+    width: inherit !important;
+  }
+
+  .header-menu__left {
+    width: inherit !important;
+  }
+
+  .header-menu__logo {
+    width: inherit !important;
+  }
+
+  .header-menu__el {
+    width: inherit !important;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+
+  .footer-menu__right {
+    width: inherit !important;
+  }
+
+  .footer-menu__left {
+    width: inherit !important;
+  }
+
+  .footer-menu__logo {
+    width: inherit !important;
+  }
+
+  .footer-menu__el {
+    width: inherit !important;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    display: block !important;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .header-menu__el {
     display: block !important;
@@ -2070,6 +2196,24 @@ form {
   }
 }
 
+@media screen and (max-width: 1024px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .header-menu__el {
+    height: 30px;
+  }
+
+  .header-menu__logo {
+    width: 100% !important;
+  }
+
+  .header-menu__left {
+    width: 100% !important;
+  }
+
+  .header-menu__right {
+    width: 100% !important;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .owl-prev {
     left: 5%;
@@ -2104,7 +2248,7 @@ form {
   }
 
   .header--row .header-menu__left {
-    margin-top: 50px;
+    margin-top: 10px;
   }
 
   .header--row .header-menu__logo-img {
@@ -2219,6 +2363,10 @@ form {
   .section-filter .nice-select {
     margin-right: 0;
   }
+
+  .slider-vertical__info {
+    font-size: 16px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -2243,11 +2391,30 @@ form {
   }
 
   .type-md {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .type-lg,.section-review__title {
-    font-size: 20px;
+    font-size: 18px;
+  }
+
+  .test-row {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .test-row__el {
+    padding: 10px 5px;
+  }
+
+  .sytle-input-text {
+    font-size: 12px !important;
+  }
+
+  body {
+    font-size: 13px;
   }
 
   .content-block {
@@ -2272,6 +2439,14 @@ form {
 
   .content-block__title {
     text-align: center;
+  }
+
+  .form-registr__wrap input {
+    width: 100% !important;
+  }
+
+  .header--row .header-menu__logo-img img {
+    margin-left: 15px;
   }
 
   .main-slider {
@@ -2358,6 +2533,40 @@ form {
 
   .bg-bottom-elipse {
     background-size: contain;
+  }
+
+  .video-cont {
+    height: 250px;
+  }
+
+  .slider-vertical__wraper {
+    margin-top: 30px;
+  }
+
+  .slider-vertical__wraper .bx-wrapper,.slider-vertical__wraper .bx-window {
+    height: 210px !important;
+  }
+
+  .slider-vertical__wraper .bx-next {
+    margin-left: -50px;
+  }
+
+  .slider-vertical__wraper .bx-prev {
+    margin-left: -50px;
+  }
+
+  .slider-vertical__info {
+    font-size: 14px !important;
+    width: 100%;
+    -webkit-border-radius: 0 0 14px 14px;
+    border-radius: 0 0 14px 14px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .img-float--left {
+    width: 100%;
   }
 }
 

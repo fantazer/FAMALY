@@ -1,11 +1,17 @@
 //! block vertical-slider
 
 .slider-vertical__wraper
+	+below(768px)
+		margin-top 30px
 	.bx-wrapper,
 	.bx-window
+		+below(768px)
+			height 210px!important
 		width 100%!important
 		height 840px!important
 	.bx-next
+		+below(768px)
+			margin-left -50px
 		position absolute
 		top -50px
 		left 50%
@@ -21,6 +27,8 @@
 			margin-top -15px
 			display block
 	.bx-prev
+		+below(768px)
+			margin-left -50px
 		position absolute
 		bottom -50px
 		left 50%
@@ -52,6 +60,13 @@
 		.slider-vertical__info
 			background grey 
 .slider-vertical__info
+	+below(768px)
+		font-size 14px!important
+		width 100%
+		border-radius 0 0 14px  14px
+		text-align center
+	+below(1024px)
+		font-size 16px
 	position absolute
 	left 0
 	bottom 0
